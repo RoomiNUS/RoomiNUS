@@ -38,26 +38,35 @@
 
             <!-- Login button -->
             <div class="login-container">
-                <button type="button" class="btn btn-outline-warning btn-sm open-login">Login</button>     
+                <button id="loginButton" type="button" class="btn btn-outline-warning btn-sm open-login">Login</button>     
             </div>
         </nav>
 
         <!-- Login window -->
-        <div class="form-window" id="login">
-            <a class="header"><h2>Login</h2></a>
-            <form>
-                <div class="input-box">
-                    <input type="text" placeholder="NUSNET ID" name="" required="">
+        <div class="form-window modal fade" id="loginWindow">
+            <div class="modal-dialog modal-dialog-centered modal-custom">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <a class="header"><h2>Login</h2></a>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="input-box">
+                                <input type="text" placeholder="NUSNET ID" name="" required="">
+                            </div>
+                            <div class="input-box">
+                                <input type="password" placeholder="Password" name="" required="">
+                            </div>
+                            <input type="submit" name="" value="Submit">
+                        </form>
+                    </div>
                 </div>
-                <div class="input-box">
-                    <input type="password" placeholder="Password" name="" required="">
-                </div>
-                <input type="submit" name="" value="Submit">
-            </form>
+            </div>
         </div>
 
         <!-- JavaScript placed at the end of the document so the pages load faster -->
         <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.js"></script>
     </body>
 </html>
