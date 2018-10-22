@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>RoomiNUS</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+
+        <!--Fonts-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=K2D" rel="stylesheet">
+
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+
+        <!--Custom style attached to this html-->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Navigation bar -->
+        <nav class="navbar-dark bar-fixed-top" id="mainNav">
+            <!-- Search Box -->
+            <div class="search-container">
+                <div class="search-box">
+                    <input class="muted-text" type="text" placeholder="Search by room or floor" required="" name="">
+                    <a class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Header for RoomiNUS -->
+            <div class="title-container">
+                <a class="title-text"><h1>RoomiNUS</h1></a>
+            </div>
+
+            <!-- Login button -->
+            <div class="login-container">
+                <button type="button" class="btn btn-outline-warning btn-sm open-login">Login</button>     
+            </div>
+        </nav>
+
+        <!-- Login window -->
+        <div class="form-window" id="login">
+            <a class="header"><h2>Login</h2></a>
+            <form>
+                <div class="input-box">
+                    <input type="text" placeholder="NUSNET ID" name="" required="">
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" name="" required="">
+                </div>
+                <input type="submit" name="" value="Submit">
+            </form>
+        </div>
+
+        <!-- JavaScript placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
