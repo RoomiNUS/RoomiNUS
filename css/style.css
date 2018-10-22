@@ -1,0 +1,151 @@
+body {
+ 	background: #212121;
+	margin: 0;
+ 	padding: 0;
+}
+
+h1,
+h2, 
+h3, 
+h4 {
+	font-family: 'K2D', sans-serif;
+	color: #ff7214;
+}
+
+h1 {
+	font-family: 'Patua One', cursive;
+	font-size: 25px;
+	text-align: center;
+}
+
+.header h2 {
+
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+
+nav.navbar-dark {
+	background: #2d2d2d;
+	padding: 9px 0px;
+}
+
+.bar-fixed-top {
+	height: 50px;
+	position: absolute;
+	width: 100%;
+}
+
+#mainNav .search-container {
+	float: left;
+	width: 30%; 
+}
+
+#mainNav .search-box {
+	height: 30px;
+}
+
+.search-btn {
+	align-items: center;
+	border-radius: 50%;
+	display: flex;
+	float: left;
+	height: 30px;
+	justify-content: center;
+	width: 30px;
+
+}
+
+.fa-search {
+	color: #c6b9ab;	
+}
+
+.muted-text {
+	border: none;
+	background: none;
+	color: #757474;
+	float: left;
+	font-size: 15px;
+	line-height: 30px;
+	outline: none;
+	padding: 0px 10px;
+	transition: 0.4s;
+	width: 0%; 
+}
+
+.search-box input:valid,
+.search-box:hover > .muted-text {
+	padding: 0px 20px;
+	width: 85%;
+}
+
+#mainNav .title-container {
+	width: 40%;
+	float: left;
+	justify-content: center;
+	color: white;
+}
+
+#mainNav .login-container {
+	opacity: 0.8;
+	float: right;
+	margin-right: 15px;
+}
+
+#login {
+	background: rgba(255, 255, 255, 0.95);
+	border-radius: 10px;
+	box-shadow: 5px 10px 10px #141413;
+	box-sizing: border-box;
+	height: 50%;
+	justify-content: center;
+	padding: 20px 30px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 50%;
+	font-family: 'K2D', sans-serif;
+	/*visibility: hidden;*/
+}
+
+#login .input-box{
+	/*visibility: hidden;*/
+}
+
+.input-box input {
+	width: 100%;
+	padding: 9px 0px;
+	background: none;
+	border: none;
+	border-bottom: 1px solid #212121;
+	outline: none;
+	font-size: 15px;
+	color: #212121;
+	margin-bottom: 30px;
+}
+
+input[type="submit"] {
+	align-self: center;
+	background: transparent;
+	border: 2px solid #ff7214;
+	outline: none;
+	color: #ff7214;
+	background: none;
+	padding: 7.5px 15px;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: 0.4s;
+}
+
+input[type="submit"]:hover {
+	background: #1e1e1e;
+}
+
+/*
+#login .active{
+	visibility: visible;
+}
+
+#login .input-box .active{
+	visibility: visible;
+}*/
