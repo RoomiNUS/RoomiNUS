@@ -21,7 +21,7 @@ h1 {
 .header h2 {
 
 	padding-top: 10px;
-	padding-bottom: 15px;
+	padding-bottom: 5px;
 }
 
 nav.navbar-dark {
@@ -91,27 +91,6 @@ nav.navbar-dark {
 	margin-right: 15px;
 }
 
-#login {
-	background: rgba(255, 255, 255, 0.95);
-	border-radius: 10px;
-	box-shadow: 5px 10px 10px #141413;
-	box-sizing: border-box;
-	height: 50%;
-	justify-content: center;
-	padding: 20px 30px;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	width: 50%;
-	font-family: 'K2D', sans-serif;
-	/*visibility: hidden;*/
-}
-
-#login .input-box{
-	/*visibility: hidden;*/
-}
-
 .input-box input {
 	width: 100%;
 	padding: 9px 0px;
@@ -122,6 +101,7 @@ nav.navbar-dark {
 	font-size: 15px;
 	color: #212121;
 	margin-bottom: 30px;
+	clear: both;
 }
 
 input[type="submit"] {
@@ -141,11 +121,64 @@ input[type="submit"]:hover {
 	background: #1e1e1e;
 }
 
-/*
-#login .active{
-	visibility: visible;
+.toggle-btn {
+	position: absolute;
+	right: 10px;
+	top: 70px;
+	display: inline-block;
+	cursor: pointer;
 }
 
-#login .input-box .active{
-	visibility: visible;
-}*/
+.checkbox {
+	display: none;
+}
+
+.check, .uncheck {
+	width: 50px;
+	padding: 0px;
+	display: inline-block;
+	position: relative;
+	background-color: #2d2d2d;
+	color: #ffecd1;
+	text-align: center;
+	font-size: 15px;
+	transition: 0.3s;
+}
+
+.check {
+	border: solid #f4ad42;
+	border-right-width: 0px;
+	border-radius: 30px 0px 0px 30px;
+}
+
+.uncheck {
+	border: solid #f4ad42;
+	border: 0px 2px 2px 0px;
+	border-radius: 0px 30px 30px 0px;
+}
+
+.check:before, .uncheck:before {
+	display: inline-block;
+	background-size: 20px;
+	background-repeat: no-repeat;
+	font-size: 15px;
+}
+
+.check:before {
+	content: "Floor";
+}
+
+.uncheck:before {
+	content: "List";
+}
+
+input[type="checkbox"].checkbox:checked + .check {
+	background-color: white;
+	color: #a36c00;
+}
+
+input[type="checkbox"].checkbox + .checkbox .uncheck {
+	background-color: white;
+	color: #a36c00;
+}
+
